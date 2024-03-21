@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Lj/rMtf2sYX47XA9A+2t+P3iU+2qWzJWM7oISa1twA+2fVDEg4mNss/eE4sfLNTwNwjv8DR07PKdFjGBfA7MUw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <%- include('./partials/header.ejs', { pageTitle: 'The Cheese Room Podcast' }) -%>
+    <div class="container2">
+        <div class="person">
+            <div class="image">
+                <img src="images/people/foundingfather.png" alt="Founding Father">
+            </div>
+            <div class="info">
+                <h2>Founding Father</h2>
+                <p class="title">Founding Father</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="social-media">
+                    <a href="https://twitter.com/johndoe" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.linkedin.com/in/johndoe" target="_blank"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="person">
+            <div class="image">
+                <img src="images/people/franco.png" alt="Franco">
+            </div>
+            <div class="info">
+                <h2>Franco</h2>
+                <p class="title">Host</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="social-media">
+                    <a href="https://twitter.com/CheeseRoomFP/status/1661793784387043333" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.facebook.com/FrancoCheeseRoom/" target="_blank"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="person">
+            <div class="image">
+                <img src="images/people/caller.png" alt="Caller">
+            </div>
+            <div class="info">
+                <h2>Caller</h2>
+                <p class="title">Youtube Host</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="person">
+            <div class="image">
+                <img src="images/people/hg.png" alt="HG">
+            </div>
+            <div class="info">
+                <h2>HG</h2>
+                <p class="title">Globetrotter</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <!-- Add more person entries as needed -->
+    </div>
+    <%- include('./partials/footer.ejs') -%>
+</body>
+</html>

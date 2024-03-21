@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Lj/rMtf2sYX47XA9A+2t+P3iU+2qWzJWM7oISa1twA+2fVDEg4mNss/eE4sfLNTwNwjv8DR07PKdFjGBfA7MUw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>The Cheese Room</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs', { pageTitle: 'The Cheese Room Podcast' }) -%>
+<p></p>
+    <div class="container2">
+        <div class="videos">
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=rj2dlnIyqJ4" target="_blank">
+                    <img src="https://img.youtube.com/vi/rj2dlnIyqJ4/maxresdefault.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="info">
+                    <h3>Comming Soon</h3>
+                    <p class="description">Description of the video Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="duration">Duration: 10:30</p>
+                </div>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=xvpyJlsyaEw" target="_blank">
+                    <img src="https://img.youtube.com/vi/xvpyJlsyaEw/maxresdefault.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="info">
+                    <h3>Video 1</h3>
+                    <p class="description">Description of the video Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="duration">Duration: 12:45</p>
+                </div>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=shnY0gKj9eo" target="_blank">
+                    <img src="https://img.youtube.com/vi/shnY0gKj9eo/maxresdefault.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="info">
+                    <h3>Video 2</h3>
+                    <p class="description">Description of the video Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="duration">Duration: 12:45</p>
+                </div>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=Ii7QWCRTy8w" target="_blank">
+                    <img src="https://img.youtube.com/vi/Ii7QWCRTy8w/maxresdefault.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="info">
+                    <h3>Video 3</h3>
+                    <p class="description">Description of the video Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="duration">Duration: 12:45</p>
+                </div>
+            </div>
+            <!-- Add more video entries as needed -->
+        </div>
+    </div>
+    <%- include('./partials/footer.ejs') -%>
+</body>
+</html>
+

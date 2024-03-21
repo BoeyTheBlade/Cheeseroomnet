@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Lj/rMtf2sYX47XA9A+2t+P3iU+2qWzJWM7oISa1twA+2fVDEg4mNss/eE4sfLNTwNwjv8DR07PKdFjGBfA7MUw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body class="indexbody">
+    <%- include('./partials/header.ejs', { pageTitle: 'The Cheese Room Podcast' }) -%>
+
+<div class="container2">
+    <div class="person">
+        <div class="image">
+            <img src="images/patreon.jpg" alt="Patreon">
+        </div>
+        <div class="info">
+            <h2>Become a Cheese head</h2>
+            <p class="title">Join our Patreon</p>
+            <p class="description">Get access to exclusive material and discussion platforms while helping us evolve.</p>
+            <a href="https://www.patreon.com/thecheeseroompodcast" class="btn btn-success" target="_blank">Join now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <%- include('./partials/footer.ejs') -%>
+  </body>
+</html>
+
+
