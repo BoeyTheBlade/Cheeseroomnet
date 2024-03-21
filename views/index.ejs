@@ -10,10 +10,36 @@
   <body class="indexbody">
     <%- include('./partials/header.ejs', { pageTitle: 'The Cheese Room Podcast' }) -%>
 
-    <video id="video-background" autoplay muted>
-      <source src="images/bg.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <div id="youtube-background"></div>
+    <script>
+      // Function to create the YouTube player
+      function onYouTubeIframeAPIReady() {
+        var player = new YT.Player('youtube-background', {
+          videoId: 'xgeqxrd9np0', // YouTube video ID
+          playerVars: {
+            autoplay: 1, // Autoplay the video
+            controls: 0, // Hide player controls
+            modestbranding: 1, // Hide YouTube logo
+            playsinline: 1, // Play inline on mobile devices
+            enablejsapi: 1, // Enable the JavaScript API
+            origin: window.location.origin // Required for some features
+          },
+          events: {
+            onReady: function(event) {
+              event.target.mute(); // Mute the video when it's ready
+            },
+            onStateChange: function(event) {
+              if (event.data === YT.PlayerState.ENDED) {
+                event.target.seekTo(8, true); // Pause the video at 10 seconds
+              }
+            }
+          }
+        });
+      }
+    </script>
+    
+    
 
     <%- include('./partials/footer.ejs') -%>
   </body>
